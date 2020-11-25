@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+    --primary-color: #004d91;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+/* inner Bg */
+.inner-bg {
+    background: url("../../image/pemrov.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    filter: grayscale(50%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-bg::after {
+    content: "";
+    display: block;
+    background: #4642a2;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+}
+
+p.designer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.inner-bg .title {
+    z-index: 999;
+    position: relative;
+    margin-top: -150px;
+}
+
+.inner-bg .wrapper {
+    background: white;
+    position: relative;
+    z-index: 999;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.btn-link-login {
+    background: #0060b7;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-link-login:hover {
+    background: var(--primary-color);
+}
+
+.btn-link-login > a.btn {
+    color: white;
+    display: block;
+    width: 100%;
+}
+
+.btn-link-web {
+    background: orange;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-link-web:hover {
+    background: #e29301;
+}
+
+.btn-link-web > .btn {
+    color: white;
+    display: block;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background: var(--primary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    list-style: none;
+}
+
+.footer-item {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+a.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #d8d8d8;
+}
+
+p.copyright {
+    font-size: 0.9rem;
+}
+
+.sosial-link {
+    display: flex;
+    align-items: center;
+}
+.sosial-link ul {
+    display: flex;
+    list-style: none;
+}
+
+.sosial-link ul > li {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    background: #023c6f;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sosial-link ul > li > a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.sosial-link ul > li:hover {
+    background: #1a5284;
+    cursor: pointer;
+}
+
+@media (max-width: 320px) {
+    .inner-bg {
+        background: url("../../image/pemrov-small.jpg") no-repeat fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title > h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-item {
+        text-align: center;
+    }
+
+    p.copyright {
+        text-align: center;
+    }
+    .sosial-link {
+        order: 1;
+    }
+
+    .link-info {
+        order: 2;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 539px) {
+    .inner-bg {
+        background: url("../../image/pemrov-small.jpg") no-repeat fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title > h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-item {
+        text-align: center;
+    }
+
+    p.copyright {
+        text-align: center;
+    }
+    .sosial-link {
+        order: 1;
+    }
+
+    .link-info {
+        order: 2;
+    }
+}
